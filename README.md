@@ -12,6 +12,8 @@ docker-compose up
 ```
 
 ## Certbot manual setup
+You must first create an A record pointing your domain to the IP address of the server.
+
 Use the command below to generate SSL certificates with certbot manually.
 
 ```
