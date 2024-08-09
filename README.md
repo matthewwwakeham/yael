@@ -64,5 +64,30 @@ git commit -m "comment here"
 git push origin dev
 ```
 
+## Merging dev into main
+Merge the dev branch into the main branch.
+
+```
+git checkout dev
+git add .
+git commit -m "comment here"
+git push
+```
+
+```
+git checkout dev
+git merge main
+git checkout main
+git merge dev
+git push
+```
+
+## Update changes
+
+```
+sudo docker compose down
+sudo docker compose up -d
+```
+
 ## References
 https://medium.com/@gtech.govind2000/a-beginners-guide-to-git-and-github-in-2024-70956b53b254
