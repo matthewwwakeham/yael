@@ -89,5 +89,14 @@ sudo docker compose down
 sudo docker compose up -d
 ```
 
+# Go binary
+You must install the Go language or use the Go image in Docker. Go.mod must be present in the same directory as main.go and if no dependencies are required then you don't need to include go.sum. Navigate to the app directory and execute the following commands.
+
+```
+docker compose down
+docker compose build
+docker compose up -d
+```
+
 ## References
 https://medium.com/@gtech.govind2000/a-beginners-guide-to-git-and-github-in-2024-70956b53b254
