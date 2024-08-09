@@ -43,5 +43,19 @@ cat ~/.ssh/id_rsa.pub
 ssh -T git@github.com
 ```
 
+## Dev Branch
+You can create a dev branch (although it already exists) with the following commands.
+
+```
+git checkout main
+git pull origin main
+git checkout -b dev
+git push origin dev
+git branch
+git add .
+git commit -m "comment here"
+git push origin dev
+```
+
 ## References
 https://medium.com/@gtech.govind2000/a-beginners-guide-to-git-and-github-in-2024-70956b53b254
