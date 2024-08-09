@@ -20,6 +20,13 @@ sudo certbot certonly --webroot -w /var/www/html -d yourdomain.com -d www.yourdo
 
 Verify that certificates exist in /etc/letsencrypt. Directories for live, renewal, etc. should be located there. If the directories don't exist then the certificates were probably not created even if the nginx.conf certbot command was run and indicates otherwise.
 
+## Cron -e for cerbot
+
+```
+crontab -e
+0 5 1 */2 *  /usr/bin/docker compose -f /var/docker/docker-compose.yml up certbot
+```
+
 ## References
 https://www.programonaut.com/setup-ssl-with-docker-nginx-and-lets-encrypt/
 
